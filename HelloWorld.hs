@@ -65,8 +65,8 @@ match query list = case query of
 {----------------------------------------------}
 {------------------ Usage ---------------------}
 {----------------------------------------------}
-ans = match (SingleWord "hola") ["Muy bien", "Hola Si", "Hola mundo", "Quiero saber de mas"]
---ans = match (Digit (read "2" :: Int)) ["Muy bien", "Hola Si", "Hola mundo", "Quiero saber de mas"]
+--ans = match (SingleWord "hola") ["Muy bien", "Hola Si", "Hola mundo", "Quiero saber de mas"]
+ans = match (Digit 2) ["Muy bien", "Hola Si", "Hola mundo", "Quiero saber de mas"]
 
 main :: IO ()
 main = print ans
